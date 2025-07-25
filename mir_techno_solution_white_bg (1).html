@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mir Techno Solution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 110px;
+    }
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #001f3f;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    .site-logo {
+      max-height: 80px;
+      width: auto;
+    }
+    nav {
+      background: #003366;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      top: 90px;
+      width: 100%;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: auto;
+    }
+    .services li::before {
+      content: '✔️ ';
+      color: #004080;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: auto;
+      max-width: 600px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+    }
+    .contact-form button {
+      background: #004080;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: #003366;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    @media (max-width: 768px) {
+      body {
+        padding-top: 150px;
+      }
+      nav {
+        top: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <img src="https://i.postimg.cc/sXMBT8H8/IMG-20250725-022023.jpg" alt="Mir Techno Solution Logo" class="site-logo" />
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="home">
+    <h1>Mir Techno Solution</h1>
+    <p><strong>Empowering Safety, Ensuring Precision</strong></p>
+    <p>(Security | Fire Safety | Environmental Monitoring)</p>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Mir Techno Solution is a leading technology integrator that provides advanced and reliable safety infrastructure.
+      Through our expertise in surveillance systems, fire detection & suppression, and environmental monitoring solutions,
+      we offer smart, scalable, and customized services tailored to our clients' needs.
+    </p>
+    <p>
+      In every project, we prioritize innovation, regulatory compliance, and technical excellence —
+      ensuring long-term safety and performance for our clients.
+    </p>
+  </section>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Security Systems</li>
+      <li>Fire Detection & Suppression</li>
+      <li>Environmental Monitoring</li>
+      <li>AMC & Technical Support</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Mir Techno Solution. All Rights Reserved.
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
+</body>
+</html>
